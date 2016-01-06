@@ -1,0 +1,58 @@
+doctype html
+html(lang="ru-RU")
+  head
+    title Smartphone Shop
+    link(rel="stylesheet" href="../libs/normalize-css/normalize.css")
+    link(rel="stylesheet" href="../css/unstyle.css")
+    link(rel="stylesheet" href="../css/main.css")
+  body
+    div.main-wrapper
+      header.main-header
+        div.contacts
+          div.socials
+            ul.socials-list
+              li.socials-list__item
+                a.socials-list__link(href="#1") Facebook
+              li.socials-list__item
+                a.socials-list__link(href="#1") Вконтакте
+              li.socials-list__item
+                a.socials-list__link(href="#1") Твиттер
+          div.tel 3212392193012390129
+          div.address ул. Маяковская 6, офис 17
+        div.logo.clearfix
+          div.logo-wrap
+            img(src="../img/cooltech.png")
+          div.search-wrap.clearfix
+            form.search-form(action="/go.php")
+              input.search-form__input(placeholder="Что будем искать?")
+              button.search-form__button(value="Найти" type="submit") Найти
+          div.user-menu
+            ul.user-menu-list
+              li.user-menu-list__item
+                 a.user-menu-list__link(href="#1") Карта проезда
+              li.user-menu-list__item
+                 a.user-menu-list__link(href="#1") История заказов
+              li.user-menu-list__item
+                 a.user-menu-list__link(href="#1") Корзина
+      nav.main-nav 
+        div.main-nav-wrap
+          ul.main-nav-list
+            li.main-nav-list__item
+              a.main-nav-list__link(href="#") Планшеты
+            li.main-nav-list__item
+              a.main-nav-list__link(href="#") Мобильные телефоны
+            li.main-nav-list__item
+              a.main-nav-list__link(href="#") МП3 Плееры
+            li.main-nav-list__item
+              a.main-nav-list__link(href="#") Персональные компьютеры
+            li.main-nav-list__item
+              a.main-nav-list__link(href="#") Планшеты
+            li.main-nav-list__item
+              a.main-nav-list__link(href="#") Мобильные телефоны
+            li.main-nav-list__item
+              a.main-nav-list__link(href="#") МП3 Плееры
+            
+      div.bread-crumbs Crumbs goes here
+      div.main-heading Main heading goes here
+      main.content-wrapper
+
