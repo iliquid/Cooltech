@@ -21,6 +21,7 @@ gulp.task('go-jade', function() {
 		pretty: true
 		}))
 		.pipe(gulp.dest(jadeCompiled))
+		.pipe(browserSync.stream());
 });
 
 // Таск для работы SASS
@@ -28,7 +29,8 @@ gulp.task('go-sass', function() {
 	gulp.src(scssPath)
 		.pipe(plumber())
 		.pipe(sass())
-		.pipe(gulp.dest(scssCompiled));
+		.pipe(gulp.dest(scssCompiled))
+		.pipe(browserSync.stream());
 })
 
 // Таск для работы BS. Создание функции browser-sync
@@ -46,12 +48,12 @@ gulp.task('browser-sync', function () {
 
 // Слежка за файлами , если изменились, выполнить перезагрузку баузера
 gulp.task('watch', function () {
-	gulp.watch(scssPath, ['go-sass']);
-	gulp.watch(jadePath, ['go-jade']);
+	gulp.watch(scssPath, { interval: 500, debounceDelay: 1000, mode: 'poll' }, ['go-sass']);
+	gulp.watch(jadePath, { interval: 500, debounceDelay: 1000, mode: 'poll' }, ['go-jade']);
 	gulp.watch([
 		'./app/*.html',
-		'./app/**/*.js',
-		'./app/**/*.css'
+		'./app/js/*.js',
+		'./app/css/*.css'
 		]).on('change', browserSync.reload)
 });
 

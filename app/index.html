@@ -45,14 +45,116 @@
             <li class="main-nav-list__item"><a href="#" class="main-nav-list__link">МП3 Плееры</a></li>
             <li class="main-nav-list__item"><a href="#" class="main-nav-list__link">Персональные компьютеры</a></li>
             <li class="main-nav-list__item"><a href="#" class="main-nav-list__link">Планшеты</a></li>
-            <li class="main-nav-list__item"><a href="#" class="main-nav-list__link">Мобильные телефоны</a></li>
+            <li class="main-nav-list__item"><a href="#" class="main-nav-list__link">Мобильные телефоны </a></li>
             <li class="main-nav-list__item"><a href="#" class="main-nav-list__link">МП3 Плееры</a></li>
           </ul>
         </div>
       </nav>
-      <div class="bread-crumbs">Crumbs goes here</div>
-      <div class="main-heading">Main heading goes here</div>
-      <main class="content-wrapper"></main>
+      <div class="bread-crumbs"><span class="bread-crumbs__link bread-crumbs__link_current">Главная</span><span class="bread-crumbs__link">Каталог</span></div>
+      <div class="main-heading"> 
+        <h2 class="main-heading__title">Мобильные телефоны </h2>
+      </div>
+      <main class="content-wrapper clearfix">
+        <aside class="content-sidebar">
+          <div class="filter-wrap">
+            <ul class="filter-list">
+              <li class="filter-block">
+                <h3 class="filter-block__heading">Наличие в магазинах</h3>
+                <div class="toggle"></div>
+                <div class="filter-block__item">
+                  <ul class="filter-block-list">
+                    <li class="filter-block-list__item">
+                      <input type="radio" name="shop" id="shop1" class="radio-input">
+                      <label for="shop1" class="radio-label">Во всех магазинах</label>
+                    </li>
+                    <li class="filter-block-list__item">
+                      <input type="radio" name="shop" id="shop2" class="radio-input">
+                      <label for="shop2" class="radio-label">В ближайшем ко мне магазине</label>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="filter-block">
+                <h3 class="filter-block__heading">Бренды</h3>
+                <div class="toggle"></div>
+                <div class="filter-block__item">
+                  <ul class="filter-block-list">
+                    <li class="filter-block-list__item">
+                      <input type="checkbox" id="option1" class="checkbox-input">
+                      <label for="option1" class="checkbox-label">Lenovo</label>
+                    </li>
+                    <li class="filter-block-list__item">
+                      <input type="checkbox" id="option2" class="checkbox-input">
+                      <label for="option2" class="checkbox-label">Apple</label>
+                    </li>
+                    <li class="filter-block-list__item">
+                      <input type="checkbox" id="option3" class="checkbox-input">
+                      <label for="option3" class="checkbox-label">Samsung</label>
+                    </li>
+                    <li class="filter-block-list__item">
+                      <input type="checkbox" id="option4" class="checkbox-input">
+                      <label for="option4" class="checkbox-label">Asus</label>
+                    </li>
+                    <li class="filter-block-list__item">
+                      <input type="checkbox" id="option5" class="checkbox-input">
+                      <label for="option5" class="checkbox-label">Motorola</label>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="filter-block">
+                <h3 class="filter-block__heading">Цвет</h3>
+                <div class="toggle"></div>
+                <div class="filter-block__item">
+                  <ul class="filter-block-list color-list">
+                    <li class="color-list__item"><a href="#1" class="color-list__link color-list__link-ffffff"></a></li>
+                    <li class="color-list__item"><a href="#1" class="color-list__link color-list__link-cccccc"></a></li>
+                    <li class="color-list__item"><a href="#1" class="color-list__link color-list__link-000000"></a></li>
+                    <li class="color-list__item"><a href="#1" class="color-list__link color-list__link-0a3153"></a></li>
+                    <li class="color-list__item"><a href="#1" class="color-list__link color-list__link-ff1800"></a></li>
+                    <li class="color-list__item"><a href="#1" class="color-list__link color-list__link-fff343"></a></li>
+                    <li class="color-list__item"><a href="#1" class="color-list__link color-list__link-fb914a"></a></li>
+                    <li class="color-list__item"><a href="#1" class="color-list__link color-list__link-92c37c"></a></li>
+                    <li class="color-list__item"><a href="#1" class="color-list__link color-list__link-40a6ff"></a></li>
+                    <li class="color-list__item"><a href="#1" class="color-list__link color-list__link-9870ad"></a></li>
+                    <li class="color-list__item"><a href="#1" class="color-list__link color-list__link-dc78ad"></a></li>
+                    <li class="color-list__item"><a href="#1" class="color-list__link color-list__link-7f401d"></a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="filter-block">
+                <h3 class="filter-block__heading">Операционные системы</h3>
+                <div class="toggle"></div>
+                <div class="filter-block__item">
+                  <ul class="filter-block-list">
+                    <li class="filter-block-list__item">
+                      <input type="checkbox" id="os1" class="checkbox-input">
+                      <label for="os1" class="checkbox-label">Android</label>
+                    </li>
+                    <li class="filter-block-list__item">
+                      <input type="checkbox" id="os2" class="checkbox-input">
+                      <label for="os2" class="checkbox-label">iOS</label>
+                    </li>
+                    <li class="filter-block-list__item">
+                      <input type="checkbox" id="os3" class="checkbox-input">
+                      <label for="os3" class="checkbox-label">Windows Mobile</label>
+                    </li>
+                    <li class="filter-block-list__item">
+                      <input type="checkbox" id="os4" class="checkbox-input">
+                      <label for="os4" class="checkbox-label">Symbian</label>
+                    </li>
+                    <li class="filter-block-list__item">
+                      <input type="checkbox" id="os5" class="checkbox-input">
+                      <label for="os5" class="checkbox-label">Custom</label>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </aside>
+        <div class="content-rightcol"></div>
+      </main>
     </div>
   </body>
 </html>

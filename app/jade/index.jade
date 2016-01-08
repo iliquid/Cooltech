@@ -48,11 +48,102 @@ html(lang="ru-RU")
             li.main-nav-list__item
               a.main-nav-list__link(href="#") Планшеты
             li.main-nav-list__item
-              a.main-nav-list__link(href="#") Мобильные телефоны
+              a.main-nav-list__link(href="#") Мобильные телефоны 
             li.main-nav-list__item
               a.main-nav-list__link(href="#") МП3 Плееры
             
-      div.bread-crumbs Crumbs goes here
-      div.main-heading Main heading goes here
-      main.content-wrapper
+      div.bread-crumbs
+        span.bread-crumbs__link.bread-crumbs__link_current Главная
+        span.bread-crumbs__link Каталог
+      div.main-heading 
+        h2.main-heading__title Мобильные телефоны 
+      main.content-wrapper.clearfix
+        aside.content-sidebar
+          div.filter-wrap
+            ul.filter-list
+              li.filter-block
+                h3.filter-block__heading Наличие в магазинах
+                div.toggle
+                div.filter-block__item
+                  ul.filter-block-list
+                    li.filter-block-list__item
+                      input.radio-input(type="radio" name="shop" id="shop1")
+                      label.radio-label(for="shop1") Во всех магазинах
+                    li.filter-block-list__item
+                      input.radio-input(type="radio" name="shop" id="shop2")
+                      label.radio-label(for="shop2") В ближайшем ко мне магазине
+              li.filter-block
+                h3.filter-block__heading Бренды
+                div.toggle
+                div.filter-block__item
+                  ul.filter-block-list
+                    li.filter-block-list__item
+                      input.checkbox-input(type="checkbox" id="option1")
+                      label.checkbox-label(for="option1") Lenovo
+                    li.filter-block-list__item
+                      input.checkbox-input(type="checkbox" id="option2")
+                      label.checkbox-label(for="option2") Apple
+                    li.filter-block-list__item
+                      input.checkbox-input(type="checkbox" id="option3")
+                      label.checkbox-label(for="option3") Samsung
+                    li.filter-block-list__item
+                      input.checkbox-input(type="checkbox" id="option4")
+                      label.checkbox-label(for="option4") Asus
+                    li.filter-block-list__item
+                      input.checkbox-input(type="checkbox" id="option5")
+                      label.checkbox-label(for="option5") Motorola
+              li.filter-block
+                h3.filter-block__heading Цвет
+                div.toggle
+                div.filter-block__item
+                  ul.filter-block-list.color-list
+                    li.color-list__item
+                      a.color-list__link.color-list__link-ffffff(href="#1")
+                    li.color-list__item
+                      a.color-list__link.color-list__link-cccccc(href="#1")
+                    li.color-list__item
+                      a.color-list__link.color-list__link-000000(href="#1")
+                    li.color-list__item
+                      a.color-list__link.color-list__link-0a3153(href="#1")
+                    li.color-list__item
+                      a.color-list__link.color-list__link-ff1800(href="#1")
+                    li.color-list__item
+                      a.color-list__link.color-list__link-fff343(href="#1")
+                    li.color-list__item
+                      a.color-list__link.color-list__link-fb914a(href="#1")
+                    li.color-list__item
+                      a.color-list__link.color-list__link-92c37c(href="#1")
+                    li.color-list__item
+                      a.color-list__link.color-list__link-40a6ff(href="#1")
+                    li.color-list__item
+                      a.color-list__link.color-list__link-9870ad(href="#1")
+                    li.color-list__item
+                      a.color-list__link.color-list__link-dc78ad(href="#1")
+                    li.color-list__item
+                      a.color-list__link.color-list__link-7f401d(href="#1")
+              li.filter-block
+                h3.filter-block__heading Операционные системы
+                div.toggle
+                div.filter-block__item
+                  ul.filter-block-list
+                    li.filter-block-list__item
+                      input.checkbox-input(type="checkbox" id="os1")
+                      label.checkbox-label(for="os1") Android
+                    li.filter-block-list__item
+                      input.checkbox-input(type="checkbox" id="os2")
+                      label.checkbox-label(for="os2") iOS
+                    li.filter-block-list__item
+                      input.checkbox-input(type="checkbox" id="os3")
+                      label.checkbox-label(for="os3") Windows Mobile
+                    li.filter-block-list__item
+                      input.checkbox-input(type="checkbox" id="os4")
+                      label.checkbox-label(for="os4") Symbian
+                    li.filter-block-list__item
+                      input.checkbox-input(type="checkbox" id="os5")
+                      label.checkbox-label(for="os5") Custom
+                    
+
+
+
+        div.content-rightcol
 
