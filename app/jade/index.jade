@@ -3,8 +3,10 @@ html(lang="ru-RU")
   head
     title Smartphone Shop
     link(rel="stylesheet" href="../libs/normalize-css/normalize.css")
+    link(rel="stylesheet" href="../libs/components-font-awesome/css/font-awesome.css")
     link(rel="stylesheet" href="../css/unstyle.css")
     link(rel="stylesheet" href="../css/main.css")
+    link(rel="stylesheet" href="../css/fonts.css")
   body
     div.main-wrapper
       header.main-header
@@ -17,8 +19,8 @@ html(lang="ru-RU")
                 a.socials-list__link(href="#1") Вконтакте
               li.socials-list__item
                 a.socials-list__link(href="#1") Твиттер
-          div.tel 3212392193012390129
-          div.address ул. Маяковская 6, офис 17
+          div.tel +7 (921) 123-12-13
+          div.address ул. Маяковского, д.6, оф. 17
         div.logo.clearfix
           div.logo-wrap
             img(src="../img/cooltech.png")
@@ -29,7 +31,7 @@ html(lang="ru-RU")
           div.user-menu
             ul.user-menu-list
               li.user-menu-list__item
-                 a.user-menu-list__link(href="#1") Карта проезда
+                 a.user-menu-list__link-active(href="#1") Карта проезда
               li.user-menu-list__item
                  a.user-menu-list__link(href="#1") История заказов
               li.user-menu-list__item
@@ -42,7 +44,7 @@ html(lang="ru-RU")
             li.main-nav-list__item
               a.main-nav-list__link(href="#") Мобильные телефоны
             li.main-nav-list__item
-              a.main-nav-list__link(href="#") МП3 Плееры
+              a.main-nav-list__link-active(href="#") МП3 Плееры
             li.main-nav-list__item
               a.main-nav-list__link(href="#") Персональные компьютеры
             li.main-nav-list__item
@@ -53,12 +55,20 @@ html(lang="ru-RU")
               a.main-nav-list__link(href="#") МП3 Плееры
             
       div.bread-crumbs
-        span.bread-crumbs__link.bread-crumbs__link_current Главная
+        span.bread-crumbs__link.bread-crumbs__link-current Главная
         span.bread-crumbs__link Каталог
       div.main-heading 
         h2.main-heading__title Мобильные телефоны 
       main.content-wrapper.clearfix
         aside.content-sidebar
+          div.cell-type-select
+               ul.filter-block-list.cell-type
+                    li.filter-block-list__item.cell-type
+                      input.radio-input-cell(type="radio" name="cell" id="type1")
+                      label.radio-label-cell(for="type1") Флагманы
+                    li.filter-block-list__item.cell-type
+                      input.radio-input-cell(type="radio" name="cell" id="type2")
+                      label.radio-label-cell(for="type2") Бюджетная линейка
           div.filter-wrap
             ul.filter-list
               li.filter-block
@@ -146,4 +156,44 @@ html(lang="ru-RU")
 
 
         div.content-rightcol
+          div.sort-n-view.clearfix
+            div.sort-n-view__sort
+              form.sort-form(action="#" method="post")
+                label.sort-form__label Сортировать по:
+                select.sort-form__select
+                span.sort-form__fake-select
 
+            div.sort-n-view__view 
+              span Вид каталога
+              i.fa.fa-th-list
+              i.fa.fa-th
+              i.fa.fa-align-justify
+          div.products-wrapper
+            ul.products-list
+              li.products-list__item
+                div.product-gallery
+                  div.product-gallery__mainimg
+                    img(src="http://placehold.it/135x135")
+                  div.product-gallery__thumbs
+                    ul.thumbs-list
+                      li.thumbs-list__item 
+                      li.thumbs-list__item 
+                      li.thumbs-list__item 
+                  div.product-gallery__vc
+                    span.vc-title Артикул
+                    span.vc 372813712
+                div.product-info
+                  h3.product-info__title Product Title
+                  p.product-info__description Product Description
+                  div.product-info__rating
+                    span.rating-star s
+                    span.rating-star s
+                    span.rating-star s
+                    span.rating-star s 
+                    span.rating-star.unstar u
+                    span.rating-number 6
+                div.product-buy 22
+
+
+
+             

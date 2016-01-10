@@ -3,8 +3,10 @@
   <head>
     <title>Smartphone Shop</title>
     <link rel="stylesheet" href="../libs/normalize-css/normalize.css">
+    <link rel="stylesheet" href="../libs/components-font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="../css/unstyle.css">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/fonts.css">
   </head>
   <body>
     <div class="main-wrapper">
@@ -17,8 +19,8 @@
               <li class="socials-list__item"><a href="#1" class="socials-list__link">Твиттер</a></li>
             </ul>
           </div>
-          <div class="tel">3212392193012390129</div>
-          <div class="address">ул. Маяковская 6, офис 17</div>
+          <div class="tel">+7 (921) 123-12-13</div>
+          <div class="address">ул. Маяковского, д.6, оф. 17</div>
         </div>
         <div class="logo clearfix">
           <div class="logo-wrap"><img src="../img/cooltech.png"></div>
@@ -30,7 +32,7 @@
           </div>
           <div class="user-menu">
             <ul class="user-menu-list">
-              <li class="user-menu-list__item"><a href="#1" class="user-menu-list__link">Карта проезда</a></li>
+              <li class="user-menu-list__item"><a href="#1" class="user-menu-list__link-active">Карта проезда</a></li>
               <li class="user-menu-list__item"><a href="#1" class="user-menu-list__link">История заказов</a></li>
               <li class="user-menu-list__item"><a href="#1" class="user-menu-list__link">Корзина</a></li>
             </ul>
@@ -42,7 +44,7 @@
           <ul class="main-nav-list">
             <li class="main-nav-list__item"><a href="#" class="main-nav-list__link">Планшеты</a></li>
             <li class="main-nav-list__item"><a href="#" class="main-nav-list__link">Мобильные телефоны</a></li>
-            <li class="main-nav-list__item"><a href="#" class="main-nav-list__link">МП3 Плееры</a></li>
+            <li class="main-nav-list__item"><a href="#" class="main-nav-list__link-active">МП3 Плееры</a></li>
             <li class="main-nav-list__item"><a href="#" class="main-nav-list__link">Персональные компьютеры</a></li>
             <li class="main-nav-list__item"><a href="#" class="main-nav-list__link">Планшеты</a></li>
             <li class="main-nav-list__item"><a href="#" class="main-nav-list__link">Мобильные телефоны </a></li>
@@ -50,12 +52,24 @@
           </ul>
         </div>
       </nav>
-      <div class="bread-crumbs"><span class="bread-crumbs__link bread-crumbs__link_current">Главная</span><span class="bread-crumbs__link">Каталог</span></div>
+      <div class="bread-crumbs"><span class="bread-crumbs__link bread-crumbs__link-current">Главная</span><span class="bread-crumbs__link">Каталог</span></div>
       <div class="main-heading"> 
         <h2 class="main-heading__title">Мобильные телефоны </h2>
       </div>
       <main class="content-wrapper clearfix">
         <aside class="content-sidebar">
+          <div class="cell-type-select">
+            <ul class="filter-block-list cell-type">
+              <li class="filter-block-list__item cell-type">
+                <input type="radio" name="cell" id="type1" class="radio-input-cell">
+                <label for="type1" class="radio-label-cell">Флагманы</label>
+              </li>
+              <li class="filter-block-list__item cell-type">
+                <input type="radio" name="cell" id="type2" class="radio-input-cell">
+                <label for="type2" class="radio-label-cell">Бюджетная линейка</label>
+              </li>
+            </ul>
+          </div>
           <div class="filter-wrap">
             <ul class="filter-list">
               <li class="filter-block">
@@ -153,7 +167,40 @@
             </ul>
           </div>
         </aside>
-        <div class="content-rightcol"></div>
+        <div class="content-rightcol">
+          <div class="sort-n-view clearfix">
+            <div class="sort-n-view__sort">
+              <form action="#" method="post" class="sort-form">
+                <label class="sort-form__label">Сортировать по:</label>
+                <select class="sort-form__select"></select><span class="sort-form__fake-select"></span>
+              </form>
+            </div>
+            <div class="sort-n-view__view"> <span>Вид каталога</span><i class="fa fa-th-list"></i><i class="fa fa-th"></i><i class="fa fa-align-justify"></i></div>
+          </div>
+          <div class="products-wrapper">
+            <ul class="products-list">
+              <li class="products-list__item">
+                <div class="product-gallery">
+                  <div class="product-gallery__mainimg"><img src="http://placehold.it/135x135"></div>
+                  <div class="product-gallery__thumbs">
+                    <ul class="thumbs-list">
+                      <li class="thumbs-list__item"> </li>
+                      <li class="thumbs-list__item"> </li>
+                      <li class="thumbs-list__item"> </li>
+                    </ul>
+                  </div>
+                  <div class="product-gallery__vc"><span class="vc-title">Артикул</span><span class="vc">372813712</span></div>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-info__title">Product Title</h3>
+                  <p class="product-info__description">Product Description</p>
+                  <div class="product-info__rating"><span class="rating-star">s</span><span class="rating-star">s</span><span class="rating-star">s</span><span class="rating-star">s </span><span class="rating-star unstar">u</span><span class="rating-number">6</span></div>
+                </div>
+                <div class="product-buy">22</div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </main>
     </div>
   </body>
